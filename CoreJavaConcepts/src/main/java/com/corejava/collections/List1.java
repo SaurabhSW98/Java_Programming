@@ -6,16 +6,16 @@ import java.util.List;
 
 public class List1 {
     public static void main(String[] args) {
-//        ArrayList<Integer> list1 = new ArrayList<>();
+        ArrayList<Integer> list1 = new ArrayList<>();
         //add
-//        list1.add(89);
-//        list1.add(90);
-//        list1.add(80);
-//        list1.add(88);
-//        list1.sort(null);
-//        System.out.println(list1);
-//        list1.remove(Integer.valueOf(80));
-//        System.out.println(list1.getClass().getName());
+        list1.add(89);
+        list1.add(90);
+        list1.add(80);
+        list1.add(88);
+        list1.sort(null);
+        System.out.println(list1);
+        list1.remove(Integer.valueOf(80));
+        System.out.println(list1.getClass().getName());
         //output=java.util.ArrayList
 
 /*        //get

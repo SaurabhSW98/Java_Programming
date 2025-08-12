@@ -2,22 +2,23 @@ package com.corejava.collections;
 
 import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Set;
 
 public class MapImpl {
     public static void main(String[] args){
-        HashMap <Integer,String> map1 = new HashMap<>(16,0.75f);
+        Map<Integer,String> map1 = new HashMap<>(16,0.75f);
           map1.put(120,"Saurabh");
           map1.put(156,"yojna");
-          map1.put(null,"John");
-          map1.put(null,"ukrich");
+          map1.put(200,"John");
+          map1.put(190,"ukrich");
           map1.remove(120);
           System.out.println(map1.remove(156,"yojna"));
           System.out.println(map1);
-
           System.out.println(map1.get(120));
-        System.out.println(map1.get(1208));
-        System.out.println(map1.containsKey(120));
+            System.out.println(map1.get(1208));
+            System.out.println(map1.containsKey(120));
+            System.out.println(map1);
 
         Set<Integer> S1=map1.keySet();
         for(int keys:S1){

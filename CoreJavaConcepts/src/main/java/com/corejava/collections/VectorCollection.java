@@ -11,10 +11,10 @@ public class VectorCollection {
     public static void main(String[] args) {
         //ArrayList<Integer> list1 = new ArrayList<>(); // using arraylist the output is never 2000
 
-        Vector<Integer> list1 = new Vector<>();///the output size of list1 is alwasy 2000 in the end due to synchronized nature of vector
+        Vector<Integer> list1 = new Vector<>();///the output size of list1 is always 2000 in the end due to synchronized nature of vector
 //other methods are same as Arraylist
 
-        /// in multi threaded env use Vector
+        /// in multithreaded environment use Vector
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {
                 list1.add(i);

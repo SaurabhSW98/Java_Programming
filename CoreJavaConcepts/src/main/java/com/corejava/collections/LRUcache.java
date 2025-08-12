@@ -22,16 +22,15 @@ public class LRUcache<Key,Value> extends LinkedHashMap<Key, Value> {
     }
 
     public static void main(String[] args){
-
         LRUcache<String ,Integer> cache = new LRUcache<>(3);
         System.out.println();
         cache.put("bob",80);
         cache.put("alice",90);
         cache.put("james",100);
         cache.get("bob");
+        cache.get("alice");
         cache.put("lisa",85);
-
-
+        //james will be not added , as it is the last name with some action
         System.out.println(cache);
     }
 }

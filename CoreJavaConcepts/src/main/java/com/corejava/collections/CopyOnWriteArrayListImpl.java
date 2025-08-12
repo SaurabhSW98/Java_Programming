@@ -12,8 +12,8 @@ public class CopyOnWriteArrayListImpl {
         list1.add("eggs");
         System.out.println("initial list "+list1);
 
-        for(String item:list1){//loop is applied on the initial list and then once the loop is completed the
-            //new list is created which is a copy
+        for(String item:list1){
+            //loop is applied on the initial list and then once the loop is completed, new list is created which is a copy
             System.out.println(item);
             if(item.equals("milk")){
                 list1.add("butter");
